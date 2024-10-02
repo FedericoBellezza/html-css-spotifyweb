@@ -183,7 +183,6 @@ main .main-body {
 	font-size: 0.7rem;
 	font-weight: 600;
 	margin-right: 20px;
-	transition: all 0.05s linear;
 }
 .main-header a.btn:hover {
 	font-size: 0.8rem;
@@ -236,6 +235,36 @@ main .main-body h2 {
 	margin-block: 30px 20px;
 	font-size: 1.3rem;
 }
+
+.popular-artist img {
+	border-radius: 50%;
+}
+
+.card-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.card-img i {
+	position: absolute;
+	font-size: 4rem;
+	z-index: 1;
+	display: none;
+}
+.card-img .opacity {
+	position: absolute;
+	width: 100%;
+	aspect-ratio: 1;
+	display: none;
+}
+
+.card-img:hover i,
+.card-img:hover .opacity {
+	display: block;
+}
+
 /* *FOOTER */
 footer {
 	background-color: #282828;
@@ -433,10 +462,7 @@ footer .right-container .progress-bar {
 		font-size: 0.8rem;
 		position: relative;
 		bottom: 20px;
-	}
-
-	.popular-artist img {
-		border-radius: 50%;
+		display: block;
 	}
 }
 
