@@ -60,7 +60,7 @@ svg {
 /* *WRAPPER */
 .wrapper {
 	display: flex;
-	height: calc(100vh - 80px);
+	height: calc(100vh - var(--footer-height));
 }
 
 /* *SIDEBAR */
@@ -74,6 +74,7 @@ svg {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.3rem;
+	overflow-y: auto;
 }
 .sidebar ul svg {
 	width: 23px;
@@ -156,7 +157,6 @@ svg {
 /* *MAIN */
 main {
 	background-color: #141922;
-	height: 100%;
 	width: 100%;
 	color: white;
 	display: flex;
@@ -167,13 +167,13 @@ main .main-body {
 	overflow: auto;
 }
 .main-header {
-	height: var(--main-header-height);
 	color: white;
 	background-image: url(../img/output-onlinepngtools.png);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 100px;
+	min-height: var(--main-header-height);
+	flex-grow: 0;
 }
 
 .main-header a.btn {
@@ -246,6 +246,7 @@ footer {
 	align-items: center;
 	padding: 10px;
 	gap: 20px;
+	z-index: 1;
 }
 /* *LEFT CONTAINER */
 .left-container {
@@ -436,5 +437,17 @@ footer .right-container .progress-bar {
 
 	.popular-artist img {
 		border-radius: 50%;
+	}
+}
+
+/* ^LARGE DISPLAY */
+@media screen and (min-width: 1440px) {
+	main .main-body .cards-container .card {
+		width: 16%;
+	}
+
+	main .main-body nav {
+		width: 600px;
+		margin: 0 auto;
 	}
 }
