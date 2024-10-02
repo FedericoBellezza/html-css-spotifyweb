@@ -438,14 +438,3 @@ footer .right-container .progress-bar {
 		border-radius: 50%;
 	}
 }
-
-/* ^LARGE DISPLAY */
-@media screen and (min-width: 1440px) {
-	footer {
-		background-color: red;
-	}
-
-	main .main-body .cards-container .card {
-		width: 16%;
-	}
-}
