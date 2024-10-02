@@ -419,4 +419,33 @@ footer .right-container .progress-bar {
 
 /* ^MEDIUM DISPLAY */
 @media screen and (min-width: 878px) {
+	main .main-body .cards-container .card {
+		width: 24%;
+	}
+	main .main-body .cards-container {
+		justify-content: flex-start;
+		gap: 7px;
+	}
+
+	.subtitle {
+		color: grey;
+		font-size: 0.8rem;
+		position: relative;
+		bottom: 20px;
+	}
+
+	.popular-artist img {
+		border-radius: 50%;
+	}
+}
+
+/* ^LARGE DISPLAY */
+@media screen and (min-width: 1440px) {
+	footer {
+		background-color: red;
+	}
+
+	main .main-body .cards-container .card {
+		width: 16%;
+	}
 }
