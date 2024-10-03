@@ -339,12 +339,28 @@ footer .middle-container .bottom {
 .progress-bar {
 	width: 100%;
 	background-color: grey;
+	cursor: pointer;
 	border-radius: 5px;
 }
 .progress {
 	width: 30%;
 	border: 2px solid white;
 	border-radius: 5px;
+	position: relative;
+}
+
+.progress-bar:hover .progress {
+	border: 2px solid greenyellow;
+}
+
+.progress-bar:hover .progress .progress-bar-ball {
+	height: 15px;
+	aspect-ratio: 1;
+	background-color: white;
+	position: absolute;
+	right: -10px;
+	bottom: -8px;
+	border-radius: 50%;
 }
 
 /* *RIGHT CONTAINER */
